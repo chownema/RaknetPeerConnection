@@ -1,0 +1,129 @@
+﻿Build started 10/5/2016 11:23:35 PM.
+     1>Project "C:\Users\xmigglex\documents\visual studio 2013\Projects\RNet\RNet\RNet.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Visual Studio\VC\bin\CL.exe /c /I"C:\Users\xmigglex\Documents\Visual Studio 2013\Projects\RNet\RNet\RNetSource" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\xmigglex\documents\visual studio 2013\projects\rnet\rnet\main.cpp(25): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\visual studio\vc\include\stdio.h(254) : see declaration of 'gets'
+     1>c:\users\xmigglex\documents\visual studio 2013\projects\rnet\rnet\main.cpp(47): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\visual studio\vc\include\stdio.h(254) : see declaration of 'gets'
+     1>c:\users\xmigglex\documents\visual studio 2013\projects\rnet\rnet\main.cpp(49): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\visual studio\vc\include\string.h(112) : see declaration of 'strcpy'
+       Link:
+         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\xmigglex\documents\visual studio 2013\Projects\RNet\Debug\RNet.exe" /INCREMENTAL /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\xmigglex\documents\visual studio 2013\Projects\RNet\Debug\RNet.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\xmigglex\documents\visual studio 2013\Projects\RNet\Debug\RNet.lib" /MACHINE:X86 Debug\main.obj
+         Debug\Base64Encoder.obj
+         Debug\BitStream.obj
+         Debug\CCRakNetSlidingWindow.obj
+         Debug\CCRakNetUDT.obj
+         Debug\CheckSum.obj
+         Debug\CloudClient.obj
+         Debug\CloudCommon.obj
+         Debug\CloudServer.obj
+         Debug\CommandParserInterface.obj
+         Debug\ConnectionGraph2.obj
+         Debug\ConsoleServer.obj
+         Debug\DataCompressor.obj
+         Debug\DirectoryDeltaTransfer.obj
+         Debug\DR_SHA1.obj
+         Debug\DS_BytePool.obj
+         Debug\DS_ByteQueue.obj
+         Debug\DS_HuffmanEncodingTree.obj
+         Debug\DS_Table.obj
+         Debug\DynDNS.obj
+         Debug\EmailSender.obj
+         Debug\EpochTimeToString.obj
+         Debug\FileList.obj
+         Debug\FileListTransfer.obj
+         Debug\FileOperations.obj
+         Debug\FormatString.obj
+         Debug\FullyConnectedMesh2.obj
+         Debug\Getche.obj
+         Debug\Gets.obj
+         Debug\GetTime.obj
+         Debug\gettimeofday.obj
+         Debug\GridSectorizer.obj
+         Debug\HTTPConnection.obj
+         Debug\HTTPConnection2.obj
+         Debug\IncrementalReadInterface.obj
+         Debug\Itoa.obj
+         Debug\LinuxStrings.obj
+         Debug\LocklessTypes.obj
+         Debug\LogCommandParser.obj
+         Debug\MessageFilter.obj
+         Debug\NatPunchthroughClient.obj
+         Debug\NatPunchthroughServer.obj
+         Debug\NatTypeDetectionClient.obj
+         Debug\NatTypeDetectionCommon.obj
+         Debug\NatTypeDetectionServer.obj
+         Debug\NetworkIDManager.obj
+         Debug\NetworkIDObject.obj
+         Debug\PacketConsoleLogger.obj
+         Debug\PacketFileLogger.obj
+         Debug\PacketizedTCP.obj
+         Debug\PacketLogger.obj
+         Debug\PacketOutputWindowLogger.obj
+         Debug\PluginInterface2.obj
+         Debug\PS4Includes.obj
+         Debug\Rackspace.obj
+         Debug\RakMemoryOverride.obj
+         Debug\RakNetCommandParser.obj
+         Debug\RakNetSocket.obj
+         Debug\RakNetSocket2.obj
+         Debug\RakNetSocket2_360_720.obj
+         Debug\RakNetSocket2_Berkley.obj
+         Debug\RakNetSocket2_Berkley_NativeClient.obj
+         Debug\RakNetSocket2_NativeClient.obj
+         Debug\RakNetSocket2_PS3_PS4.obj
+         Debug\RakNetSocket2_PS4.obj
+         Debug\RakNetSocket2_Vita.obj
+         Debug\RakNetSocket2_WindowsStore8.obj
+         Debug\RakNetSocket2_Windows_Linux.obj
+         Debug\RakNetSocket2_Windows_Linux_360.obj
+         Debug\RakNetStatistics.obj
+         Debug\RakNetTransport2.obj
+         Debug\RakNetTypes.obj
+         Debug\RakPeer.obj
+         Debug\RakSleep.obj
+         Debug\RakString.obj
+         Debug\RakThread.obj
+         Debug\RakWString.obj
+         Debug\Rand.obj
+         Debug\RandSync.obj
+         Debug\ReadyEvent.obj
+         Debug\RelayPlugin.obj
+         Debug\ReliabilityLayer.obj
+         Debug\ReplicaManager3.obj
+         Debug\Router2.obj
+         Debug\RPC4Plugin.obj
+         Debug\SecureHandshake.obj
+         Debug\SendToThread.obj
+         Debug\SignaledEvent.obj
+         Debug\SimpleMutex.obj
+         Debug\SocketLayer.obj
+         Debug\StatisticsHistory.obj
+         Debug\StringCompressor.obj
+         Debug\StringTable.obj
+         Debug\SuperFastHash.obj
+         Debug\TableSerializer.obj
+         Debug\TCPInterface.obj
+         Debug\TeamBalancer.obj
+         Debug\TeamManager.obj
+         Debug\TelnetTransport.obj
+         Debug\ThreadsafePacketLogger.obj
+         Debug\TwoWayAuthentication.obj
+         Debug\UDPForwarder.obj
+         Debug\UDPProxyClient.obj
+         Debug\UDPProxyCoordinator.obj
+         Debug\UDPProxyServer.obj
+         Debug\VariableDeltaSerializer.obj
+         Debug\VariableListDeltaTracker.obj
+         Debug\VariadicSQLParser.obj
+         Debug\VitaIncludes.obj
+         Debug\WSAStartupSingleton.obj
+         Debug\_FindFirst.obj
+         RNet.vcxproj -> C:\Users\xmigglex\documents\visual studio 2013\Projects\RNet\Debug\RNet.exe
+     1>Done Building Project "C:\Users\xmigglex\documents\visual studio 2013\Projects\RNet\RNet\RNet.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.69

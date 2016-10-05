@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F2EA9A2-AE63-4EA5-A3B3-1B0B39D9D01B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RNet</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\xmigglex\Documents\Visual Studio 2013\Projects\RNet\RNet\RNetSource</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\xmigglex\Documents\Visual Studio 2013\Projects\RNet\RNet\RNetSource</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RNetSource\Base64Encoder.cpp" />
+    <ClCompile Include="RNetSource\BitStream.cpp" />
+    <ClCompile Include="RNetSource\CCRakNetSlidingWindow.cpp" />
+    <ClCompile Include="RNetSource\CCRakNetUDT.cpp" />
+    <ClCompile Include="RNetSource\CheckSum.cpp" />
+    <ClCompile Include="RNetSource\CloudClient.cpp" />
+    <ClCompile Include="RNetSource\CloudCommon.cpp" />
+    <ClCompile Include="RNetSource\CloudServer.cpp" />
+    <ClCompile Include="RNetSource\CommandParserInterface.cpp" />
+    <ClCompile Include="RNetSource\ConnectionGraph2.cpp" />
+    <ClCompile Include="RNetSource\ConsoleServer.cpp" />
+    <ClCompile Include="RNetSource\DataCompressor.cpp" />
+    <ClCompile Include="RNetSource\DirectoryDeltaTransfer.cpp" />
+    <ClCompile Include="RNetSource\DR_SHA1.cpp" />
+    <ClCompile Include="RNetSource\DS_BytePool.cpp" />
+    <ClCompile Include="RNetSource\DS_ByteQueue.cpp" />
+    <ClCompile Include="RNetSource\DS_HuffmanEncodingTree.cpp" />
+    <ClCompile Include="RNetSource\DS_Table.cpp" />
+    <ClCompile Include="RNetSource\DynDNS.cpp" />
+    <ClCompile Include="RNetSource\EmailSender.cpp" />
+    <ClCompile Include="RNetSource\EpochTimeToString.cpp" />
+    <ClCompile Include="RNetSource\FileList.cpp" />
+    <ClCompile Include="RNetSource\FileListTransfer.cpp" />
+    <ClCompile Include="RNetSource\FileOperations.cpp" />
+    <ClCompile Include="RNetSource\FormatString.cpp" />
+    <ClCompile Include="RNetSource\FullyConnectedMesh2.cpp" />
+    <ClCompile Include="RNetSource\Getche.cpp" />
+    <ClCompile Include="RNetSource\Gets.cpp" />
+    <ClCompile Include="RNetSource\GetTime.cpp" />
+    <ClCompile Include="RNetSource\gettimeofday.cpp" />
+    <ClCompile Include="RNetSource\GridSectorizer.cpp" />
+    <ClCompile Include="RNetSource\HTTPConnection.cpp" />
+    <ClCompile Include="RNetSource\HTTPConnection2.cpp" />
+    <ClCompile Include="RNetSource\IncrementalReadInterface.cpp" />
+    <ClCompile Include="RNetSource\Itoa.cpp" />
+    <ClCompile Include="RNetSource\LinuxStrings.cpp" />
+    <ClCompile Include="RNetSource\LocklessTypes.cpp" />
+    <ClCompile Include="RNetSource\LogCommandParser.cpp" />
+    <ClCompile Include="RNetSource\MessageFilter.cpp" />
+    <ClCompile Include="RNetSource\NatPunchthroughClient.cpp" />
+    <ClCompile Include="RNetSource\NatPunchthroughServer.cpp" />
+    <ClCompile Include="RNetSource\NatTypeDetectionClient.cpp" />
+    <ClCompile Include="RNetSource\NatTypeDetectionCommon.cpp" />
+    <ClCompile Include="RNetSource\NatTypeDetectionServer.cpp" />
+    <ClCompile Include="RNetSource\NetworkIDManager.cpp" />
+    <ClCompile Include="RNetSource\NetworkIDObject.cpp" />
+    <ClCompile Include="RNetSource\PacketConsoleLogger.cpp" />
+    <ClCompile Include="RNetSource\PacketFileLogger.cpp" />
+    <ClCompile Include="RNetSource\PacketizedTCP.cpp" />
+    <ClCompile Include="RNetSource\PacketLogger.cpp" />
+    <ClCompile Include="RNetSource\PacketOutputWindowLogger.cpp" />
+    <ClCompile Include="RNetSource\PluginInterface2.cpp" />
+    <ClCompile Include="RNetSource\PS4Includes.cpp" />
+    <ClCompile Include="RNetSource\Rackspace.cpp" />
+    <ClCompile Include="RNetSource\RakMemoryOverride.cpp" />
+    <ClCompile Include="RNetSource\RakNetCommandParser.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2_360_720.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2_Berkley.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2_Berkley_NativeClient.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2_NativeClient.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2_PS3_PS4.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2_PS4.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2_Vita.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2_WindowsStore8.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2_Windows_Linux.cpp" />
+    <ClCompile Include="RNetSource\RakNetSocket2_Windows_Linux_360.cpp" />
+    <ClCompile Include="RNetSource\RakNetStatistics.cpp" />
+    <ClCompile Include="RNetSource\RakNetTransport2.cpp" />
+    <ClCompile Include="RNetSource\RakNetTypes.cpp" />
+    <ClCompile Include="RNetSource\RakPeer.cpp" />
+    <ClCompile Include="RNetSource\RakSleep.cpp" />
+    <ClCompile Include="RNetSource\RakString.cpp" />
+    <ClCompile Include="RNetSource\RakThread.cpp" />
+    <ClCompile Include="RNetSource\RakWString.cpp" />
+    <ClCompile Include="RNetSource\Rand.cpp" />
+    <ClCompile Include="RNetSource\RandSync.cpp" />
+    <ClCompile Include="RNetSource\ReadyEvent.cpp" />
+    <ClCompile Include="RNetSource\RelayPlugin.cpp" />
+    <ClCompile Include="RNetSource\ReliabilityLayer.cpp" />
+    <ClCompile Include="RNetSource\ReplicaManager3.cpp" />
+    <ClCompile Include="RNetSource\Router2.cpp" />
+    <ClCompile Include="RNetSource\RPC4Plugin.cpp" />
+    <ClCompile Include="RNetSource\SecureHandshake.cpp" />
+    <ClCompile Include="RNetSource\SendToThread.cpp" />
+    <ClCompile Include="RNetSource\SignaledEvent.cpp" />
+    <ClCompile Include="RNetSource\SimpleMutex.cpp" />
+    <ClCompile Include="RNetSource\SocketLayer.cpp" />
+    <ClCompile Include="RNetSource\StatisticsHistory.cpp" />
+    <ClCompile Include="RNetSource\StringCompressor.cpp" />
+    <ClCompile Include="RNetSource\StringTable.cpp" />
+    <ClCompile Include="RNetSource\SuperFastHash.cpp" />
+    <ClCompile Include="RNetSource\TableSerializer.cpp" />
+    <ClCompile Include="RNetSource\TCPInterface.cpp" />
+    <ClCompile Include="RNetSource\TeamBalancer.cpp" />
+    <ClCompile Include="RNetSource\TeamManager.cpp" />
+    <ClCompile Include="RNetSource\TelnetTransport.cpp" />
+    <ClCompile Include="RNetSource\ThreadsafePacketLogger.cpp" />
+    <ClCompile Include="RNetSource\TwoWayAuthentication.cpp" />
+    <ClCompile Include="RNetSource\UDPForwarder.cpp" />
+    <ClCompile Include="RNetSource\UDPProxyClient.cpp" />
+    <ClCompile Include="RNetSource\UDPProxyCoordinator.cpp" />
+    <ClCompile Include="RNetSource\UDPProxyServer.cpp" />
+    <ClCompile Include="RNetSource\VariableDeltaSerializer.cpp" />
+    <ClCompile Include="RNetSource\VariableListDeltaTracker.cpp" />
+    <ClCompile Include="RNetSource\VariadicSQLParser.cpp" />
+    <ClCompile Include="RNetSource\VitaIncludes.cpp" />
+    <ClCompile Include="RNetSource\WSAStartupSingleton.cpp" />
+    <ClCompile Include="RNetSource\_FindFirst.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RNetSource\AutopatcherPatchContext.h" />
+    <ClInclude Include="RNetSource\AutopatcherRepositoryInterface.h" />
+    <ClInclude Include="RNetSource\Base64Encoder.h" />
+    <ClInclude Include="RNetSource\BitStream.h" />
+    <ClInclude Include="RNetSource\CCRakNetSlidingWindow.h" />
+    <ClInclude Include="RNetSource\CCRakNetUDT.h" />
+    <ClInclude Include="RNetSource\CheckSum.h" />
+    <ClInclude Include="RNetSource\CloudClient.h" />
+    <ClInclude Include="RNetSource\CloudCommon.h" />
+    <ClInclude Include="RNetSource\CloudServer.h" />
+    <ClInclude Include="RNetSource\CommandParserInterface.h" />
+    <ClInclude Include="RNetSource\ConnectionGraph2.h" />
+    <ClInclude Include="RNetSource\ConsoleServer.h" />
+    <ClInclude Include="RNetSource\DataCompressor.h" />
+    <ClInclude Include="RNetSource\DirectoryDeltaTransfer.h" />
+    <ClInclude Include="RNetSource\DR_SHA1.h" />
+    <ClInclude Include="RNetSource\DS_BinarySearchTree.h" />
+    <ClInclude Include="RNetSource\DS_BPlusTree.h" />
+    <ClInclude Include="RNetSource\DS_BytePool.h" />
+    <ClInclude Include="RNetSource\DS_ByteQueue.h" />
+    <ClInclude Include="RNetSource\DS_Hash.h" />
+    <ClInclude Include="RNetSource\DS_Heap.h" />
+    <ClInclude Include="RNetSource\DS_HuffmanEncodingTree.h" />
+    <ClInclude Include="RNetSource\DS_HuffmanEncodingTreeFactory.h" />
+    <ClInclude Include="RNetSource\DS_HuffmanEncodingTreeNode.h" />
+    <ClInclude Include="RNetSource\DS_LinkedList.h" />
+    <ClInclude Include="RNetSource\DS_List.h" />
+    <ClInclude Include="RNetSource\DS_Map.h" />
+    <ClInclude Include="RNetSource\DS_MemoryPool.h" />
+    <ClInclude Include="RNetSource\DS_Multilist.h" />
+    <ClInclude Include="RNetSource\DS_OrderedChannelHeap.h" />
+    <ClInclude Include="RNetSource\DS_OrderedList.h" />
+    <ClInclude Include="RNetSource\DS_Queue.h" />
+    <ClInclude Include="RNetSource\DS_QueueLinkedList.h" />
+    <ClInclude Include="RNetSource\DS_RangeList.h" />
+    <ClInclude Include="RNetSource\DS_Table.h" />
+    <ClInclude Include="RNetSource\DS_ThreadsafeAllocatingQueue.h" />
+    <ClInclude Include="RNetSource\DS_Tree.h" />
+    <ClInclude Include="RNetSource\DS_WeightedGraph.h" />
+    <ClInclude Include="RNetSource\DynDNS.h" />
+    <ClInclude Include="RNetSource\EmailSender.h" />
+    <ClInclude Include="RNetSource\EmptyHeader.h" />
+    <ClInclude Include="RNetSource\EpochTimeToString.h" />
+    <ClInclude Include="RNetSource\Export.h" />
+    <ClInclude Include="RNetSource\FileList.h" />
+    <ClInclude Include="RNetSource\FileListNodeContext.h" />
+    <ClInclude Include="RNetSource\FileListTransfer.h" />
+    <ClInclude Include="RNetSource\FileListTransferCBInterface.h" />
+    <ClInclude Include="RNetSource\FileOperations.h" />
+    <ClInclude Include="RNetSource\FormatString.h" />
+    <ClInclude Include="RNetSource\FullyConnectedMesh2.h" />
+    <ClInclude Include="RNetSource\Getche.h" />
+    <ClInclude Include="RNetSource\Gets.h" />
+    <ClInclude Include="RNetSource\GetTime.h" />
+    <ClInclude Include="RNetSource\gettimeofday.h" />
+    <ClInclude Include="RNetSource\GridSectorizer.h" />
+    <ClInclude Include="RNetSource\HTTPConnection.h" />
+    <ClInclude Include="RNetSource\HTTPConnection2.h" />
+    <ClInclude Include="RNetSource\IncrementalReadInterface.h" />
+    <ClInclude Include="RNetSource\InternalPacket.h" />
+    <ClInclude Include="RNetSource\Itoa.h" />
+    <ClInclude Include="RNetSource\Kbhit.h" />
+    <ClInclude Include="RNetSource\LinuxStrings.h" />
+    <ClInclude Include="RNetSource\LocklessTypes.h" />
+    <ClInclude Include="RNetSource\LogCommandParser.h" />
+    <ClInclude Include="RNetSource\MessageFilter.h" />
+    <ClInclude Include="RNetSource\MessageIdentifiers.h" />
+    <ClInclude Include="RNetSource\MTUSize.h" />
+    <ClInclude Include="RNetSource\NativeFeatureIncludes.h" />
+    <ClInclude Include="RNetSource\NativeFeatureIncludesOverrides.h" />
+    <ClInclude Include="RNetSource\NativeTypes.h" />
+    <ClInclude Include="RNetSource\NatPunchthroughClient.h" />
+    <ClInclude Include="RNetSource\NatPunchthroughServer.h" />
+    <ClInclude Include="RNetSource\NatTypeDetectionClient.h" />
+    <ClInclude Include="RNetSource\NatTypeDetectionCommon.h" />
+    <ClInclude Include="RNetSource\NatTypeDetectionServer.h" />
+    <ClInclude Include="RNetSource\NetworkIDManager.h" />
+    <ClInclude Include="RNetSource\NetworkIDObject.h" />
+    <ClInclude Include="RNetSource\PacketConsoleLogger.h" />
+    <ClInclude Include="RNetSource\PacketFileLogger.h" />
+    <ClInclude Include="RNetSource\PacketizedTCP.h" />
+    <ClInclude Include="RNetSource\PacketLogger.h" />
+    <ClInclude Include="RNetSource\PacketOutputWindowLogger.h" />
+    <ClInclude Include="RNetSource\PacketPool.h" />
+    <ClInclude Include="RNetSource\PacketPriority.h" />
+    <ClInclude Include="RNetSource\PluginInterface2.h" />
+    <ClInclude Include="RNetSource\PS3Includes.h" />
+    <ClInclude Include="RNetSource\PS4Includes.h" />
+    <ClInclude Include="RNetSource\Rackspace.h" />
+    <ClInclude Include="RNetSource\RakAlloca.h" />
+    <ClInclude Include="RNetSource\RakAssert.h" />
+    <ClInclude Include="RNetSource\RakMemoryOverride.h" />
+    <ClInclude Include="RNetSource\RakNetCommandParser.h" />
+    <ClInclude Include="RNetSource\RakNetDefines.h" />
+    <ClInclude Include="RNetSource\RakNetDefinesOverrides.h" />
+    <ClInclude Include="RNetSource\RakNetSmartPtr.h" />
+    <ClInclude Include="RNetSource\RakNetSocket.h" />
+    <ClInclude Include="RNetSource\RakNetSocket2.h" />
+    <ClInclude Include="RNetSource\RakNetStatistics.h" />
+    <ClInclude Include="RNetSource\RakNetTime.h" />
+    <ClInclude Include="RNetSource\RakNetTransport2.h" />
+    <ClInclude Include="RNetSource\RakNetTypes.h" />
+    <ClInclude Include="RNetSource\RakNetVersion.h" />
+    <ClInclude Include="RNetSource\RakPeer.h" />
+    <ClInclude Include="RNetSource\RakPeerInterface.h" />
+    <ClInclude Include="RNetSource\RakSleep.h" />
+    <ClInclude Include="RNetSource\RakString.h" />
+    <ClInclude Include="RNetSource\RakThread.h" />
+    <ClInclude Include="RNetSource\RakWString.h" />
+    <ClInclude Include="RNetSource\Rand.h" />
+    <ClInclude Include="RNetSource\RandSync.h" />
+    <ClInclude Include="RNetSource\ReadyEvent.h" />
+    <ClInclude Include="RNetSource\RefCountedObj.h" />
+    <ClInclude Include="RNetSource\RelayPlugin.h" />
+    <ClInclude Include="RNetSource\ReliabilityLayer.h" />
+    <ClInclude Include="RNetSource\ReplicaEnums.h" />
+    <ClInclude Include="RNetSource\ReplicaManager3.h" />
+    <ClInclude Include="RNetSource\Router2.h" />
+    <ClInclude Include="RNetSource\RPC4Plugin.h" />
+    <ClInclude Include="RNetSource\SecureHandshake.h" />
+    <ClInclude Include="RNetSource\SendToThread.h" />
+    <ClInclude Include="RNetSource\SignaledEvent.h" />
+    <ClInclude Include="RNetSource\SimpleMutex.h" />
+    <ClInclude Include="RNetSource\SimpleTCPServer.h" />
+    <ClInclude Include="RNetSource\SingleProducerConsumer.h" />
+    <ClInclude Include="RNetSource\SocketDefines.h" />
+    <ClInclude Include="RNetSource\SocketIncludes.h" />
+    <ClInclude Include="RNetSource\SocketLayer.h" />
+    <ClInclude Include="RNetSource\StatisticsHistory.h" />
+    <ClInclude Include="RNetSource\StringCompressor.h" />
+    <ClInclude Include="RNetSource\StringTable.h" />
+    <ClInclude Include="RNetSource\SuperFastHash.h" />
+    <ClInclude Include="RNetSource\TableSerializer.h" />
+    <ClInclude Include="RNetSource\TCPInterface.h" />
+    <ClInclude Include="RNetSource\TeamBalancer.h" />
+    <ClInclude Include="RNetSource\TeamManager.h" />
+    <ClInclude Include="RNetSource\TelnetTransport.h" />
+    <ClInclude Include="RNetSource\ThreadPool.h" />
+    <ClInclude Include="RNetSource\ThreadsafePacketLogger.h" />
+    <ClInclude Include="RNetSource\TransportInterface.h" />
+    <ClInclude Include="RNetSource\TwoWayAuthentication.h" />
+    <ClInclude Include="RNetSource\UDPForwarder.h" />
+    <ClInclude Include="RNetSource\UDPProxyClient.h" />
+    <ClInclude Include="RNetSource\UDPProxyCommon.h" />
+    <ClInclude Include="RNetSource\UDPProxyCoordinator.h" />
+    <ClInclude Include="RNetSource\UDPProxyServer.h" />
+    <ClInclude Include="RNetSource\VariableDeltaSerializer.h" />
+    <ClInclude Include="RNetSource\VariableListDeltaTracker.h" />
+    <ClInclude Include="RNetSource\VariadicSQLParser.h" />
+    <ClInclude Include="RNetSource\VitaIncludes.h" />
+    <ClInclude Include="RNetSource\WindowsIncludes.h" />
+    <ClInclude Include="RNetSource\WSAStartupSingleton.h" />
+    <ClInclude Include="RNetSource\XBox360Includes.h" />
+    <ClInclude Include="RNetSource\_FindFirst.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="RNetSource\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RNetSource\RakNet.vcproj" />
+    <None Include="RNetSource\RakNet_vc8.vcproj" />
+    <None Include="RNetSource\RakNet_vc9.vcproj" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
